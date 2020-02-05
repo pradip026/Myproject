@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+{{name}} Live in {{location}}
+    <center><table>
+    <form action="/valid" method="post"> {% csrf_token %}
+    <th>Login Form</th>
+    <tr>
+        <td>First Name</td>
+        <td><input type='text' name="fname"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type='text' name="lname"></td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td><input type='password'name="pswd"></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><input type='radio' name='Gender'value='Male'>Male</td>
+        <td><input type='radio' name='Gender'value='Female'>Female</td>
+    </tr>
+    <tr>
+        <td>Feedback</td>
+        <td><textarea name="text" style="margin: 0px; width: 250px; height: 117px;"> </textarea></td>
+    </tr>
+    <tr> </tr>
+    <tr> </tr>
+        <tr><td><button type="submit">submit</button> </td>
+        <td><input type='button' value='clear'></td></tr>
+
+
+    </form>
+    </table></center>
+
+</body>
+</html>
